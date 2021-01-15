@@ -1,0 +1,133 @@
+@use 'menu';
+@use 'grid';
+@use 'buttons';
+@use 'variables/fonts';
+@use 'variables/images';
+@use 'default';
+
+
+/*Main top*/
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.main__top-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color:#FFD;
+    font-size: 2.3rem;
+    font-weight: 400;
+    padding: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 4rem;
+    margin-right:0;
+}
+
+
+/* Main mid*/
+.main__mid {
+    background-color:#fdcc52;
+}
+
+.main__mid-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main__mid-tittle {
+    margin:3rem auto;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.main__mid-content{
+    margin: 2rem 0; 
+}
+
+.main__mid-link{
+    margin: 2rem 0;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.google-play {
+    width: 135px;
+}
+
+/*Main__mid-two*/
+
+.main__mid--two{
+    background-color: #FFF;
+    margin-top: 0;
+}
+
+.features__tittle {
+    margin-top: 0;
+    padding-top: 3rem;
+}
+
+
+.main__mid2-tittle {
+    text-align: center;
+}
+
+.main__mid2-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.card-header {
+    background-image: linear-gradient(90deg, #da1515 0%, #a00b8a);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    height: 4rem;
+}
+
+
+/*Footer*/
+
+.footer {
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__tittle-div {
+    text-align: center;
+}
+
+.footer__tittle {
+    color: #AAA;
+    font-size: .8rem;
+    padding-top: 1rem;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.footer__link{
+    color:#AAA;
+    font-size: .7rem;
+    padding: 0 .4rem;
+}
+
+.footer__link:hover {
+    color: #fdcc52;
+}

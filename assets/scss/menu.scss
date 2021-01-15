@@ -1,0 +1,100 @@
+body{
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+nav {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+
+    div{
+        align-items: flex-start;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+
+        @media screen and (min-width: 720px) {
+            align-items: center;
+        }
+
+        ul{
+            display: none;
+            flex-direction: column;
+            list-style: none;
+            margin: 0 auto;
+            padding: 0;
+            width: 100%;
+
+            @media screen and (min-width: 720px) {
+                display: flex;
+                flex-direction: row;
+                width: auto;
+            }
+
+            li {
+                text-align: center;
+
+                a{
+                    color: #222;
+                    display: block;
+                    line-height: 1rem;
+                    padding: 1rem;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: #fdcc52;
+                    }
+                }
+            }
+        }
+
+        input[type="checkbox"] {
+            display: none;
+
+            &:checked + ul {
+                display: flex;
+            }
+        }
+
+        label {
+            align-items: center;
+            cursor: pointer;
+            display: flex;
+            flex-wrap: wrap;
+            height: 1.9rem;
+            padding:.5rem;
+            width:2.5rem;
+            margin: .7rem 1.3rem;
+            background-color: #EEE;
+            border-radius: .2rem;
+
+            @media screen and (min-width: 720px){
+                display: none;
+            }
+        }
+    }
+}
+
+nav div span {
+    background: #666;
+    display: block;
+    height: 2px;
+    width: 1.5rem;
+    margin: .1rem;
+}
+
+.nav__tittle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 4rem;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #FFF;
+    background-image: 0;
+  }

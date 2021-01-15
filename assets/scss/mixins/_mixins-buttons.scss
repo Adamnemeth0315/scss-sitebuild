@@ -1,0 +1,28 @@
+@use 'sass:color';
+
+@mixin btn-alt($background, $background-hover) {
+    background-color: $background;
+    border: 1px solid #fff;
+    border-radius: 1.2rem;
+    width: 70%;
+    font-family:'lato';
+    margin-top: 3rem;
+    line-height: 1.5rem;
+
+    &:hover {
+        cursor: pointer;
+        border: 1px solid#fdcc52;
+        transition: all .3s ease;
+        background-color: $background-hover;
+    }
+}
+
+@mixin btn-style($modifier, $background) {
+    &--#{modifier} {
+        background-color: $background;
+    
+        &:hover {
+            background-color: color.scale($background, $lightness: -10%);
+        }
+    }
+}

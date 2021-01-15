@@ -1,0 +1,41 @@
+@font-face{
+    font-family: 'catamaran';
+    src: url('/asstets/fonts/catamaran/static/Catamaran-Medium.ttf');
+}
+@font-face{
+    font-family: 'lato';
+    src: url('/asstets/fonts/lato/Lato-Regular.ttf');
+}
+@font-face{
+    font-family: 'mulish';
+    src: url('/asstets/fonts/muli/static/Mulish-Medium.ttf');
+}
+
+p, span, small {
+    font-family: 'mulish', 'Helvetica', 'Arial', sans-serif;
+    user-select: none;
+}
+
+.nav__tittle {
+    color: #dab617;
+    font-family: 'catamaran', 'Helvetica', 'Arial', sans-serif;
+}
+
+.nav__tittle:hover {
+    color: #FFF;
+    user-select: none;
+}
+
+.nav__link {
+    color:#DDD;
+    transition: all 0.3s ease-out;
+    font-family: 'lato', 'Helvetica', 'Arial', sans-serif;
+}
+
+.nav__link:hover{
+    color: #fdcc52;
+}
+
+.btn{
+    font-family:'lato';
+}

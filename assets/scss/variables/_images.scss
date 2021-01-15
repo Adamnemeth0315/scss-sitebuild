@@ -1,0 +1,32 @@
+.main__top-images {
+    position: relative;
+}
+
+.phone--img {
+    width: 250px;
+    position: relative;
+}
+
+.phone__inside--img {
+    width: 220px;
+    position: absolute;
+    top:58px;
+    left:14px;
+}
+
+.main__mid2-images {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.phone--img2 {
+    width: 250px;
+    position: relative;
+}
+
+.phone__inside--img2 {
+    width: 220px;
+    position: absolute;
+    top:53px
+}
