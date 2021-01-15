@@ -95,6 +95,121 @@
     height: 4rem;
 }
 
+/*Main mid 3*/
+.main__mid--three {
+    background-image: url('/assets/img/bg-cta.jpg');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: -1;
+    filter: opacity(1);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*Itt még vannak gondok*/
+.main__mid3-content--container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main__mid3-content{
+    padding-top: 4rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main__mid3-button--container{
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    border-radius: 1.2rem;
+    width: 30%;
+}
+
+@media screen and (max-width: 992px) {
+    .btn {
+        border-radius: 1rem;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .btn {
+        border-radius: 1rem;
+        width: 50%;
+    }
+}
+
+.btn{
+    font-family:'lato';
+}
+
+.btn:hover {
+    background-color: #fdcc52;
+    border: 1px solid#fdcc52;
+    transition: all .3s ease;
+}
+
+/*Main footer */
+
+.main__footer {
+    background-color: #fdcc52;
+}
+
+.main__footer-tittle {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.main__footer-icons {
+    display: flex;
+    justify-content: center;
+    padding: .6rem;
+}
+
+.icon-heart {
+    color: #FF2233;
+}
+
+.icon {
+    font-size: 3rem;
+    padding-left: .6rem;
+}
+
+.fa-facebook {
+    color: rgba(12, 22, 247, .9)
+}
+
+.fa-facebook:hover {
+    color: rgba(12, 22, 247, 1)
+}
+
+.fa-google-plus {
+    color:rgba(255, 33, 12, .9)
+}
+
+.fa-google-plus:hover {
+    color:rgba(255, 33, 12, 1)
+}
+
+.fa-twitter-square {
+    color:rgba(13, 180, 202, 0.9)
+}
+
+.fa-twitter-square:hover {
+    color:rgba(13, 180, 202, 1)
+}
+
 
 /*Footer*/
 
