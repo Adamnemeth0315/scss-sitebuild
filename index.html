@@ -13,7 +13,7 @@
 
     <nav class="nav">
         <div class="nav__tittle col-lg-6">
-            <h1 class="title">Start Bootstrap</h1>
+            <h1 class="title">Start SASS</h1>
         </div>
         <div class="nav__container col-md-6">
             <label class="nav__hamburger-label" for="menu">
@@ -27,10 +27,10 @@
                     <a class="nav__link" href="#discover">Download</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="">Features</a>
+                    <a class="nav__link" href="#features">Features</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="">Contact</a>
+                    <a class="nav__link" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -39,7 +39,7 @@
     <main>
         <section class="main__top">
             <div class="container">
-                <div class="col-md-4 main__top-content">
+                <div class="col-lg-4 main__top-content">
                     <span>
                         New age is an app landing page with help
                         you beautifully showcase your new mobile
@@ -47,7 +47,7 @@
                     </span>
                     <button class="btn">Start now for free</button>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <div class="main__top-images">
                         <img class="phone--img" src="/assets/img/img/img/phone.png" alt="phone">
                         <img class="phone__inside--img" src="/assets/img/img/img/demo-screen-1.jpg" alt="demo-screen-1">
@@ -69,7 +69,7 @@
                     </small>
                 </div>
 
-                <div class="row ">
+                <div class="row main__mid-links">
                     <a class="main__mid-link" href="https://play.google.com">
                         <img class="google-play mr-1 mb-md-5" data-toggle="tooltip" data-placement="left"
                             data-original-title="Google play" title="" src="/assets/img/google-play-badge.svg"
@@ -90,14 +90,14 @@
                 </div>
 
                 <div class="main__mid2-content">
-                    <div class="col-md-4">
+                    <div class=" col-8 col-lg-4">
                         <div class="main__mid2-images">
                             <img class="phone--img2" src="/assets/img/phone.png" alt="phone">
                             <img class="phone__inside--img2" src="/assets/img/demo-screen-1.jpg" alt="demo-screen-1">
                         </div>
                     </div>
                     <!-- Kártyák -->
-                    <div class="col-8 main__mid2-cards">
+                    <div class="col-8 col-lg-6 main__mid2-cards">
                         <div class="card-deck">
                             <div class="card ">
                                 <div class="card-header"><i class="fa fa-mobile fa-3x"></i></div>
@@ -145,15 +145,15 @@
 
         <section class="main__mid--three">
             <div class="main__mid3-content--container">
-                <div class="col-8 main__mid3-content">
+                <div class="col-4 main__mid3-content">
                     <h2>Stop waiting,</h2>
                     <h2>Start building</h2>
                 </div>
-            </div>
-            <div class="main__mid3-button--container">
-                <div class="col-8 main__mid3-button">
+                <!-- <div class="main__mid3-button--container"> -->
+                <div class="col-4 main__mid3-button">
                     <button class="btn">Let's Get Started!</button>
                 </div>
+                <!-- </div> -->
             </div>
         </section>
 
@@ -189,17 +189,91 @@
             <h5 class="footer__tittle">Your website 2021. All Rights Reserved.</h5>
         </div>
         <div class="footer__links">
-            <small><a class="footer__link modal__open-privacy" href="">Privacy</a></small>
-            <small><a class="footer__link modal__open-terms" href="">Terms</a></small>
-            <small><a class="footer__link modal__open-faq" href="">FAQ</a></small>
+            <small><a class="footer__link modal__open-privacy" href="#modal">Privacy</a></small>
+            <small><a class="footer__link modal__open-terms" href="#modal">Terms</a></small>
+            <small><a class="footer__link modal__open-faq" href="#modal">FAQ</a></small>
         </div>
     </footer>
 
     <!-- Modal -->
+    <section class="modal" id="modal">
+        <div class="modal-content" tabindex="0">
+            <span class="modal__close">&times;</span>
+            <header>
+                <h2>Privacy</h2>
+            </header>
+            <div class="modal__text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in
+                a piece
+                of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+                professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
+                literature, discovered the undoubtable source.</div>
+            <footer class="modal__footer">
+                <div class="btnGroup">
+                    <button class="succedbtn green">
+                        Okay
+                    </button>
+                    <button class="closebtn red">
+                        Close
+                    </button>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <section class="modal">
+        <div class="modal-content" tabindex="0">
+            <span class="modal__close">&times;</span>
+            <header>
+                <h2>Terms</h2>
+            </header>
+            <div class="modal__text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in
+                a piece
+                of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+                professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
+                literature, discovered the undoubtable source.</div>
+            <footer class="modal__footer">
+                <div class="btnGroup">
+                    <button class="succedbtn green">
+                        Okay
+                    </button>
+                    <button class="closebtn red">
+                        Close
+                    </button>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <section class="modal">
+        <div class="modal-content" tabindex="0">
+            <span class="modal__close">&times;</span>
+            <header>
+                <h2>Faq</h2>
+            </header>
+            <div class="modal__text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in
+                a piece
+                of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+                professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
+                literature, discovered the undoubtable source.</div>
+            <footer class="modal__footer">
+                <div class="btnGroup">
+                    <button class="succedbtn green">
+                        Okay
+                    </button>
+                    <button class="closebtn red">
+                        Close
+                    </button>
+                </div>
+            </footer>
+        </div>
+    </section>
 
 
 
-
+    <script src="/assets/js/main.js"></script>
 </body>
 
 </html>

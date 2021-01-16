@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   font-family: Arial, Arial, Helvetica, sans-serif;
   margin: 0;
@@ -15,7 +14,7 @@ nav div {
   flex-direction: row-reverse;
   width: 100%;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 992px) {
   nav div {
     align-items: center;
   }
@@ -28,7 +27,7 @@ nav div ul {
   padding: 0;
   width: 100%;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 992px) {
   nav div ul {
     display: flex;
     flex-direction: row;
@@ -66,7 +65,7 @@ nav div label {
   background-color: #EEE;
   border-radius: 0.2rem;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 992px) {
   nav div label {
     display: none;
   }
@@ -410,7 +409,7 @@ nav div span {
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 1.2rem;
-  width: 70%;
+  width: 50%;
   font-family: "lato";
   margin: 3rem auto;
   line-height: 2rem;
@@ -457,15 +456,15 @@ nav div span {
 
 @font-face {
   font-family: "catamaran";
-  src: url("/asstets/fonts/catamaran/static/Catamaran-Medium.ttf");
+  src: url("/assets/fonts/catamaran/static/Catamaran-Medium.ttf");
 }
 @font-face {
   font-family: "lato";
-  src: url("/asstets/fonts/lato/Lato-Regular.ttf");
+  src: url("/assets/fonts/lato/Lato-Regular.ttf");
 }
 @font-face {
   font-family: "mulish";
-  src: url("/asstets/fonts/muli/static/Mulish-Medium.ttf");
+  src: url("/assets/fonts/muli/static/Mulish-Medium.ttf");
 }
 p, span, small {
   font-family: "mulish", "Helvetica", "Arial", sans-serif;
@@ -516,11 +515,13 @@ p, span, small {
   display: flex;
   justify-content: center;
   position: relative;
+  margin: 1.2rem auto;
 }
 
 .phone--img2 {
   width: 250px;
   position: relative;
+  padding-bottom: 1rem;
 }
 
 .phone__inside--img2 {
@@ -535,12 +536,122 @@ p, span, small {
 
 html {
   scroll-behavior: smooth;
+  transition: all 0.3s ease;
 }
 
 body {
   margin: 0;
   background-image: url("/assets/img/bg-pattern.png"), linear-gradient(-90deg, #da2431, #7a4397);
   background-repeat: repeat;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal.showModal {
+  display: flex;
+  position: absolute;
+  flex-wrap: nowrap;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+  justify-content: center;
+}
+
+.modal-content {
+  flex-wrap: nowrap;
+  background-color: #fdfdfd;
+  margin: auto;
+  padding: 15px;
+  border: 1px solid #888;
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .modal-content {
+    background-color: #fdfdfd;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid #888;
+    width: 50%;
+  }
+}
+.modal__text {
+  flex-wrap: nowrap;
+  min-width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .modal__text {
+    min-width: 70%;
+  }
+}
+.modal__close {
+  float: right;
+  top: 1.2rem;
+  right: 1.2rem;
+  color: #333;
+  font-size: 2.5rem;
+  padding-right: 1rem;
+}
+
+.modal__close:hover, .modal__close:focus {
+  color: #000;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.modal__footer {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+@media only screen and (min-width: 992px) {
+  .modal__footer {
+    width: 100%;
+  }
+}
+.btnGroup {
+  display: flex-end;
+  margin-left: auto;
+}
+
+.succedbtn {
+  background-color: #33FF66;
+  text-align: center;
+  padding: 0.7rem 1.2rem;
+  text-decoration: none;
+  border: solid 1px transparent;
+  margin: 1.2rem;
+}
+
+.closebtn {
+  background-color: #FF2233;
+  text-align: center;
+  padding: 0.7rem 1rem;
+  text-decoration: none;
+  border: solid 1px transparent;
+  margin: 0.6rem;
+}
+
+.succedbtn:hover, .closebtn:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.7);
 }
 
 /*Main top*/
@@ -558,10 +669,7 @@ body {
   font-size: 2.3rem;
   font-weight: 400;
   padding: 3rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  margin-left: 4rem;
-  margin-right: 0;
+  margin: 2rem auto;
 }
 
 /* Main mid*/
@@ -585,10 +693,27 @@ body {
   margin: 2rem 0;
 }
 
-.main__mid-link {
-  margin: 2rem 0;
+.main__mid-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 2rem;
 }
 
+.main__mid-link {
+  margin: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .main__mid-links {
+    flex-direction: row;
+  }
+
+  .main__mid-link {
+    margin: 2rem 0;
+  }
+}
 .row {
   display: flex;
   justify-content: center;
@@ -613,6 +738,18 @@ body {
   text-align: center;
 }
 
+.main__mid2-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 992px) {
+  .main__mid2-content {
+    flex-direction: row;
+    margin-left: 0.6rem;
+  }
+}
 .main__mid2-cards {
   display: flex;
   flex-direction: column;
@@ -620,6 +757,12 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 992px) {
+  .main__mid2-cards {
+    flex-direction: row;
+    margin: 0.6rem;
+  }
+}
 .card-header {
   background-image: linear-gradient(90deg, #da1515 0%, #a00b8a);
   color: transparent;
@@ -628,6 +771,25 @@ body {
   height: 4rem;
 }
 
+.card-title {
+  margin-top: 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.card-deck {
+  margin: 0.5rem 10rem;
+}
+
+@media screen and (min-width: 992px) {
+  .card-deck {
+    margin: 1rem 1rem;
+  }
+
+  .card {
+    margin-top: 0.8rem;
+  }
+}
 /*Main mid 3*/
 .main__mid--three {
   background-image: url("/assets/img/bg-cta.jpg");
@@ -642,41 +804,29 @@ body {
   background-size: cover;
 }
 
-/*Itt még vannak gondok*/
 .main__mid3-content--container {
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-
-.main__mid3-content {
-  padding-top: 4rem;
-  margin: 1rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.main__mid3-button--container {
-  display: flex;
-  justify-content: center;
+  padding: 1rem 0.4rem 1rem 3rem;
+  margin-left: 4rem;
 }
 
 .btn {
   border-radius: 1.2rem;
-  width: 30%;
+  min-width: 30%;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
   .btn {
     border-radius: 1rem;
-    width: 40%;
+    max-width: 20rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1200px) {
   .btn {
     border-radius: 1rem;
-    width: 50%;
+    max-width: 25rem;
   }
 }
 .btn {
