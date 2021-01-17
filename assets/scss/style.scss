@@ -5,9 +5,14 @@
 @use 'variables/images';
 @use 'default';
 @use 'modal';
+@use 'tooltip';
 
 
 /*Main top*/
+main {
+    margin-top: 4rem;
+}
+
 .container {
     display: flex;
     justify-content: center;

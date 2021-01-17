@@ -7,6 +7,7 @@ nav {
     background-color: transparent;
     display: flex;
     justify-content: center;
+    height: 4.5rem;
 
     div{
         align-items: flex-start;
@@ -35,7 +36,7 @@ nav {
             li {
                 text-align: center;
 
-                a{
+                a {
                     color: #222;
                     display: block;
                     line-height: 1rem;

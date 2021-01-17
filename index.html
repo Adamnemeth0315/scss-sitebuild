@@ -70,14 +70,16 @@
                 </div>
 
                 <div class="row main__mid-links">
-                    <a class="main__mid-link" href="https://play.google.com">
-                        <img class="google-play mr-1 mb-md-5" data-toggle="tooltip" data-placement="left"
+                    <a class="main__mid-link tooltip" href="https://play.google.com">
+                        <img class="google-play" data-toggle="tooltip" data-placement="left"
                             data-original-title="Google play" title="" src="/assets/img/google-play-badge.svg"
                             alt="google-play-badge">
+                        <span class="tooltiptext">Google Play</span>
                     </a>
-                    <a class="main__mid-link" href="https://www.apple.com/app-store/">
-                        <img class="mb-5" src="/assets/img/app-store-badge.svg" data-toggle="tooltip"
+                    <a class="main__mid-link tooltip" href="https://www.apple.com/app-store/">
+                        <img class="appstore" src="/assets/img/app-store-badge.svg" data-toggle="tooltip"
                             data-placement="right" data-original-title="App store" title="" alt="app-store-badge">
+                        <span class="tooltiptext">App Store</span>
                     </a>
                 </div>
             </div>
@@ -162,20 +164,23 @@
                 <h2 class="mt-4 mt-5"> We <span class="icon-heart"><i class="fa fa-heart"></i></span> new friends</h2>
             </div>
             <div class="main__footer-icons">
-                <div class="icon">
+                <div class="icon tooltip">
                     <a href="https://twitter.com">
                         <i class="fa fa-twitter-square"></i>
                     </a>
+                    <span class="tooltiptext">Twitter</span>
                 </div>
-                <div class="icon">
+                <div class="icon tooltip">
                     <a href="https://facebook.com/?lang=en">
                         <i class="fa fa-facebook"></i>
                     </a>
+                    <span class="tooltiptext">Facebook</span>
                 </div>
-                <div class="icon">
+                <div class="icon tooltip">
                     <a href="https://www.google.com/">
                         <i class="fa fa-google-plus"></i>
                     </a>
+                    <span class="tooltiptext">Google</span>
                 </div>
             </div>
         </section>
@@ -189,14 +194,14 @@
             <h5 class="footer__tittle">Your website 2021. All Rights Reserved.</h5>
         </div>
         <div class="footer__links">
-            <small><a class="footer__link modal__open-privacy" href="#modal">Privacy</a></small>
-            <small><a class="footer__link modal__open-terms" href="#modal">Terms</a></small>
-            <small><a class="footer__link modal__open-faq" href="#modal">FAQ</a></small>
+            <small><a class="footer__link modal__open-privacy" href="#privacy">Privacy</a></small>
+            <small><a class="footer__link modal__open-terms" href="#terms">Terms</a></small>
+            <small><a class="footer__link modal__open-faq" href="#faq">FAQ</a></small>
         </div>
     </footer>
 
     <!-- Modal -->
-    <section class="modal" id="modal">
+    <section class="modal" id="privacy">
         <div class="modal-content" tabindex="0">
             <span class="modal__close">&times;</span>
             <header>
@@ -221,7 +226,7 @@
         </div>
     </section>
 
-    <section class="modal">
+    <section class="modal" id="terms">
         <div class="modal-content" tabindex="0">
             <span class="modal__close">&times;</span>
             <header>
@@ -246,7 +251,7 @@
         </div>
     </section>
 
-    <section class="modal">
+    <section class="modal" id="faq">
         <div class="modal-content" tabindex="0">
             <span class="modal__close">&times;</span>
             <header>

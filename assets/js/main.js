@@ -14,6 +14,8 @@ const closeButton = document.querySelector('.closebtn');
 const giveClassFunction = (ev) => {
     ev.preventDefault();
     modal.setAttribute('class', 'modal showModal');
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
 const takeAwayClassFunction = () => modal.setAttribute('class', 'modal');
 
